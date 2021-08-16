@@ -8,12 +8,16 @@
 @import 'base/reset';
 @import 'typography';
 //components
+@import 'components/grid';
+@import 'components/input';
 @import 'components/buttons';
 @import 'components/navigations';
-@import 'components/thumbnails';
 //layout
 @import 'layout/main';
-@import 'layout/sidebar';
+@import 'layout/sidebar-left';
+@import 'layout/sidebar-right';
+@import 'layout/footer';
+@import 'layout/navbar';
 //pages
 //themes
 //vendors
