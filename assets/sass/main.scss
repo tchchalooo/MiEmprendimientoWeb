@@ -1,0 +1,19 @@
+//tipografías
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+//abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+//base
+@import 'base/base';
+@import 'base/reset';
+@import 'typography';
+//components
+@import 'components/buttons';
+@import 'components/navigations';
+@import 'components/thumbnails';
+//layout
+@import 'layout/main';
+@import 'layout/sidebar';
+//pages
+//themes
+//vendors
