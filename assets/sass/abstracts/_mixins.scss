@@ -1,0 +1,5 @@
+@mixin TF-Style ($FontFamily, $Weight, $Size) {
+    font-family: $FontFamily; //tipo de fuente
+    font-weight: $Weight;     //definicion del peso 
+    font-size: $Size;         //definicion del tamaño
+}

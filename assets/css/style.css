@@ -12,4 +12,131 @@ img {
   max-width: 100%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+.navbar {
+  background-color: #000000;
+  height: 3.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.navbar div {
+  background-color: #000000;
+}
+
+#img-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+/*#navbar-logo {
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        color: $black;
+    }
+}*/
+#navbar-collapse {
+  background-color: #000000;
+}
+
+.navbar-expand-md {
+  padding-left: 1rem;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  color: #FFA500;
+}
+
+.navbar-toggler {
+  margin-right: 1.6rem;
+}
+
+.white-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 165, 0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.main-img {
+  background-image: url(../img/desarrolloweb2021t.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  flex-wrap: wrap;
+  height: 8rem;
+}
+footer div p {
+  color: #FFFFFF !important;
+}
+
+#footerl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#footerl__legal {
+  margin-right: 1rem;
+}
+#footerl__legal a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#footerl__legal a:hover {
+  color: #FFA500;
+}
+#footerl__anuncio {
+  margin-right: 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#footerl__anuncio a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#footerl__anuncio a:hover {
+  color: #FFA500;
+}
+#footerl__email {
+  margin-right: 0.5rem;
+}
+#footerl__enviar {
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: #FFAF6D;
+  border-radius: 20% 20% 20% 20%;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  transition: background-color 2s;
+}
+
+input:hover {
+  background-color: #FFAF6D;
+  transition: background-color 2s;
+  transition-duration: background-color 0.5s;
+}
+
 /*# sourceMappingURL=style.css.map */

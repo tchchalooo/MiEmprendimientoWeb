@@ -1,0 +1,80 @@
+footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: $black;
+flex-wrap: wrap;
+height:8rem;
+
+div{
+    p{color: $white !important;
+    }
+    
+}
+}
+
+#footerl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__legal{
+        margin-right: 1rem;
+      
+        a{  color: $white;
+            text-decoration:none;
+           
+        }
+        a:hover{
+            color: $orange;
+          
+        }
+    }
+
+    &__anuncio{
+        margin-right: 1rem;
+        color: $white;
+        text-decoration:none;
+
+        a{  color: $white;
+            text-decoration:none;
+        }
+            a:hover{
+                color: $orange;
+              
+            }
+
+        
+    }
+
+    &__email{
+        margin-right: 0.5rem;
+
+    }
+
+    &__enviar{
+        margin-top:0.5rem;
+
+       
+   
+     
+    }
+}
+
+button{
+    background-color: $tangerine;
+    border-radius: 20% 20% 20% 20%;
+}
+
+button:hover{
+    background-color: $white;
+    transition: background-color 2s;
+}
+
+
+input:hover{
+    background-color: $tangerine;
+    transition: background-color 2s;
+    transition-duration:background-color .5s;
+}
+
+  

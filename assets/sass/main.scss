@@ -13,11 +13,12 @@
 @import 'components/buttons';
 @import 'components/navigations';
 //layout
-@import 'layout/main';
-@import 'layout/sidebar-left';
-@import 'layout/sidebar-right';
-@import 'layout/footer';
 @import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/main-grid';
+@import 'layout/section';
+@import 'layout/aside';
+@import 'layout/footer';
 //pages
 @import 'pages/media-queries';
 //themes
