@@ -2,25 +2,9 @@
 $white:     #FFFFFF;
 $black:     #000000;
 $sable:     #060606;
+$gray:      #505050;
 $charcoal:  #2E1503;
 $tangerine: #FFAF6D;
 $orange:    #FFA500;
 
-// Typography
-$ubuntu:   'Ubuntu', sans-serif; // regular - bold
-$poppins: 'Poppins', sans-serif; // regular - bold
-
-// Font Weights
-$regular: 400;
-$bold:    700;
-
-// Font Sizes
-$xxxxx-large: 50px;
-$xxxx-large:  45px;
-$xxx-large:   40px;
-$xx-large:    35px;
-$x-large:     30px;
-$large:       20px;
-$medium:      16px;
-$small:       14px;
-$x-small:     12px;
+//Typographies are in the partial _typography.scss located in the base folder

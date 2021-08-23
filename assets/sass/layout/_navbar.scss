@@ -11,14 +11,7 @@
     height: 3rem;
     width: 3rem;
 }
-/*#navbar-logo {
-    text-align: center;
-    text-decoration: none;
-    color: $white;
-    &:hover {
-        color: $black;
-    }
-}*/
+
 #navbar-collapse {
     background-color: $black;
 }
@@ -28,9 +21,8 @@
         .nav-link {
             padding-left: 1rem;
             padding-right: 1rem;
-            font-family: $ubuntu;
+            @include TF-Style ($poppins, $bold, $medium);
             color: $white;
-            font-weight: $bold;
         }
         .nav-link:hover {
             color: $orange;

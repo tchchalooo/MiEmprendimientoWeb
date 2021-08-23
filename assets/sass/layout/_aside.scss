@@ -1,1 +1,76 @@
-//@include TF-Style ($FontFamily, $Weight, $Size)
+.aside {
+    padding: 1rem 0.8rem;
+}
+
+#redonda{
+    border: 2px solid $charcoal;
+    width: 10rem;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#curso2020{
+    margin-top: 1rem;
+
+    h3{
+        text-align: center;
+        @include TF-Style ($ubuntu, $bold, $large)
+    
+    }
+    
+}
+
+//esta clase está en el div de la línea 123 del index 
+.cursostf {
+    
+    @include TF-Style ($ubuntu, $regular, $small);
+    
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#favicon{
+    text-align: center;
+    font-size: 15pt;
+    i {
+        margin: 0.3rem;
+    }
+}
+
+#masCursos{
+    text-align: center;
+    background-color: $gray;
+    color: $white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    p {
+        @include TF-Style($poppins,$bold,$large);
+    }
+}
+
+#cursostf{
+    p{
+        @include TF-Style($ubuntu,$regular,$small)
+    }
+}
+
+#lista{
+
+    li{
+        a{
+           text-decoration: none !important;
+            color:$black;
+        }
+    }
+    list-style: circle;
+   
+    @include TF-Style($poppins,$regular,$medium);
+}

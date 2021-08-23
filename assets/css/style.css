@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+#paths {
+  animation: signohtml 1.5s linear infinite alternate;
+}
+
+#rueda, #ruedainterior {
+  animation: rueda 5s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes signohtml {
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes rueda {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -14,7 +40,7 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .navbar {
@@ -32,14 +58,6 @@ img {
   width: 3rem;
 }
 
-/*#navbar-logo {
-    text-align: center;
-    text-decoration: none;
-    color: $white;
-    &:hover {
-        color: $black;
-    }
-}*/
 #navbar-collapse {
   background-color: #000000;
 }
@@ -50,9 +68,10 @@ img {
 .navbar-expand-md .navbar-nav .nav-link {
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: "Ubuntu", sans-serif;
-  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 .navbar-expand-md .navbar-nav .nav-link:hover {
   color: #FFA500;
@@ -77,6 +96,116 @@ img {
   height: 40vh;
 }
 
+.grid__bordes {
+  border: 1px solid #505050;
+}
+
+.cursos {
+  padding: 1.2rem 0.8rem;
+}
+.cursos__bordes {
+  border: 1px dotted #505050;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.cursos__TF h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.cursos__TF p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.cursos__TF h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.cursos__icons i {
+  font-size: 12px;
+}
+.cursos__icons span {
+  font-size: 14px;
+}
+
+.aside {
+  padding: 1rem 0.8rem;
+}
+
+#redonda {
+  border: 2px solid #2E1503;
+  width: 10rem;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#curso2020 {
+  margin-top: 1rem;
+}
+#curso2020 h3 {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cursostf {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#favicon {
+  text-align: center;
+  font-size: 15pt;
+}
+#favicon i {
+  margin: 0.3rem;
+}
+
+#masCursos {
+  text-align: center;
+  background-color: #505050;
+  color: #FFFFFF;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#masCursos p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#cursostf p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#lista {
+  list-style: circle;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+#lista li a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -85,50 +214,59 @@ footer {
   flex-wrap: wrap;
   height: 8rem;
 }
-footer div p {
+
+#footerl p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #FFFFFF !important;
+  text-align: center;
 }
 
-#footerl {
+#footerr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
-#footerl__legal {
+#footerr__legal {
   margin-right: 1rem;
 }
-#footerl__legal a {
+#footerr__legal a {
   color: #FFFFFF;
   text-decoration: none;
 }
-#footerl__legal a:hover {
+#footerr__legal a:hover {
   color: #FFA500;
 }
-#footerl__anuncio {
+#footerr__anuncio {
   margin-right: 1rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-#footerl__anuncio a {
+#footerr__anuncio a {
   color: #FFFFFF;
   text-decoration: none;
 }
-#footerl__anuncio a:hover {
+#footerr__anuncio a:hover {
   color: #FFA500;
 }
-#footerl__email {
-  margin-right: 0.5rem;
-}
-#footerl__enviar {
-  margin-top: 0.5rem;
+#footerr__email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-button {
+#boton {
   background-color: #FFAF6D;
-  border-radius: 20% 20% 20% 20%;
+  border-radius: 5px;
+  margin-left: 0.5rem;
 }
 
-button:hover {
+#boton:hover {
   background-color: #FFFFFF;
   transition: background-color 2s;
 }
@@ -136,7 +274,44 @@ button:hover {
 input:hover {
   background-color: #FFAF6D;
   transition: background-color 2s;
-  transition-duration: background-color 0.5s;
+}
+
+input {
+  border-radius: 5px;
+  transition: background-color 10s ease-out;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+}
+
+@media (max-width: 390px) {
+  footer {
+    padding: 0.5rem 0rem;
+    height: 10rem;
+  }
+
+  #footerl p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 16px;
+    font-size: 14px;
+  }
+
+  #footerr {
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 16px;
+    font-size: 14px;
+  }
+  #footerr__email {
+    flex-direction: column;
+  }
+
+  #boton {
+    width: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

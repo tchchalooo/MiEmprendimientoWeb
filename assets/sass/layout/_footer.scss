@@ -1,80 +1,119 @@
-footer{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: $black;
-flex-wrap: wrap;
-height:8rem;
-
-div{
-    p{color: $white !important;
-    }
-    
-}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black;
+    flex-wrap: wrap;
+    height: 8rem;
 }
 
 #footerl {
+    p {
+        @include TF-Style ($poppins, $regular, $medium);
+        color: $white !important;
+        text-align: center;
+    }
+}
+
+
+#footerr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    &__legal{
+    justify-content: center;
+    @include TF-Style ($poppins, $regular, $medium);
+
+    &__legal {
         margin-right: 1rem;
-      
-        a{  color: $white;
-            text-decoration:none;
-           
+
+        a {
+            color: $white;
+            text-decoration: none;
+
         }
-        a:hover{
+
+        a:hover {
             color: $orange;
-          
+
         }
     }
 
-    &__anuncio{
+    &__anuncio {
         margin-right: 1rem;
         color: $white;
-        text-decoration:none;
+        text-decoration: none;
 
-        a{  color: $white;
-            text-decoration:none;
+        a {
+            color: $white;
+            text-decoration: none;
         }
-            a:hover{
-                color: $orange;
-              
-            }
 
-        
-    }
+        a:hover {
+            color: $orange;
 
-    &__email{
-        margin-right: 0.5rem;
+        }
 
     }
 
-    &__enviar{
-        margin-top:0.5rem;
-
-       
-   
-     
+    &__email {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
-button{
+#boton {
     background-color: $tangerine;
-    border-radius: 20% 20% 20% 20%;
+    border-radius: 5px;
+    margin-left: .5rem;
 }
 
-button:hover{
+#boton:hover {
     background-color: $white;
     transition: background-color 2s;
 }
 
 
-input:hover{
+input:hover {
     background-color: $tangerine;
     transition: background-color 2s;
-    transition-duration:background-color .5s;
+
 }
 
-  
+input {
+    border-radius: 5px;
+    transition: background-color 10s ease-out;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+}
+
+@media (max-width:390px) {
+    footer {
+        padding: 0.5rem 0rem;
+        height: 10rem;
+    }
+
+    #footerl {
+        p {
+            @include TF-Style ($poppins, $medium, $small);
+        }
+
+    }
+
+    #footerr {
+        flex-direction: column;
+        @include TF-Style ($poppins, $medium, $small);
+
+        &__email {
+            flex-direction: column;
+        }
+    }
+
+    #boton {
+        width: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .5rem;
+    }
+}

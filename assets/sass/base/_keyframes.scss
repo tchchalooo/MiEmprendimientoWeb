@@ -1,0 +1,27 @@
+#paths {
+    animation: signohtml 1.5s linear infinite alternate;
+}
+
+#rueda, #ruedainterior {
+    animation: rueda 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes signohtml {
+    
+    0% {transform: translate(100px,0)}
+    
+    100% {transform: translate(0,0)}
+}
+
+
+@keyframes rueda {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}

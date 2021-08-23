@@ -1,1 +1,37 @@
-//@include TF-Style ($FontFamily, $Weight, $Size)
+.cursos {
+    padding: 1.2rem 0.8rem;
+
+    &__bordes {
+        border: 1px dotted $gray;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__TF {
+        h2 {
+            @include TF-Style ($ubuntu, $bold, $large);
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+        }
+
+        p {
+            @include TF-Style ($ubuntu, $regular, $small);
+        }
+
+        h3 {
+            @include TF-Style ($ubuntu, $bold, $medium);
+            margin-top: 0.6rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    &__icons {
+        i {
+            font-size: $x-small;
+        }
+
+        span {
+            font-size: $small;
+        }
+    }
+}
