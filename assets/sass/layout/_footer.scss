@@ -15,7 +15,6 @@ footer {
     }
 }
 
-
 #footerr {
     display: flex;
     flex-wrap: wrap;
@@ -29,12 +28,10 @@ footer {
         a {
             color: $white;
             text-decoration: none;
-
         }
 
         a:hover {
             color: $orange;
-
         }
     }
 
@@ -50,9 +47,7 @@ footer {
 
         a:hover {
             color: $orange;
-
         }
-
     }
 
     &__email {
@@ -60,32 +55,6 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-#boton {
-    background-color: $tangerine;
-    border-radius: 5px;
-    margin-left: .5rem;
-}
-
-#boton:hover {
-    background-color: $white;
-    transition: background-color 2s;
-}
-
-
-input:hover {
-    background-color: $tangerine;
-    transition: background-color 2s;
-
-}
-
-input {
-    border-radius: 5px;
-    transition: background-color 10s ease-out;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
 }
 
 @media (max-width:390px) {
@@ -98,7 +67,6 @@ input {
         p {
             @include TF-Style ($poppins, $medium, $small);
         }
-
     }
 
     #footerr {

@@ -30,8 +30,7 @@
     @include TF-Style ($ubuntu, $regular, $small);
     
     text-align: justify;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 #favicon{
@@ -46,10 +45,7 @@
     text-align: center;
     background-color: $gray;
     color: $white;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     
     p {
         @include TF-Style($poppins,$bold,$large);
@@ -73,4 +69,19 @@
     list-style: circle;
    
     @include TF-Style($poppins,$regular,$medium);
+}
+
+#boxweb {
+    width: 20vw;
+    height: auto;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media(max-width:660px){
+    #boxweb{
+        width: 35vw;
+    }
 }

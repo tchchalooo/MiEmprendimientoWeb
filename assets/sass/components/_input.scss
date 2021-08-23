@@ -1,0 +1,12 @@
+input {
+    border-radius: 5px;
+    transition: background-color 10s ease-out;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+}
+
+input:hover {
+    background-color: $tangerine;
+    transition: background-color 2s;
+}

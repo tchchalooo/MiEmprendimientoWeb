@@ -1,0 +1,10 @@
+.boton {
+    background-color: $tangerine;
+    border-radius: 5px;
+    margin-left: .5rem;
+}
+
+.boton:hover {
+    background-color: $white;
+    transition: background-color 2s;
+}
